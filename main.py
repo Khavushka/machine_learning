@@ -17,3 +17,5 @@ score = accurancy_score(y_test, prediction)
 score
 # predictions
 # df
+
+# persisting models
