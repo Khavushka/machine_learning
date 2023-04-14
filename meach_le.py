@@ -11,3 +11,5 @@ df = pd.read_csv('spiral.txt', names=cols,  sep='\t')
 df.head()
 
 print(df.head())
+
+df['first'] = (df['first'] == "g").astype(int)
