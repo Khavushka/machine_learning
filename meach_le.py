@@ -12,4 +12,5 @@ df.head()
 
 print(df.head())
 
-df['first'] = (df['first'] == "g").astype(int)
+# til at convertere, hvis man har g og h til at være 1 0g 0
+# df['first'] = (df['first'] == "g").astype(int) 
