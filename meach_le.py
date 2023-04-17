@@ -36,5 +36,6 @@ def scale_dataset(dataframe):
     scaler = StandardScaler()
     x = scaler.fit_transform(x)
 
-    data = np.hstack((x, y))
+    data = np.hstack((x, np.reshape(y, (-1, 1))))
     
+    return data, x, y
