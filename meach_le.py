@@ -14,7 +14,7 @@ df.head()
 print(df.head())
 
 # til at convertere, hvis man har g og h til at være 1 0g 0
-# df['first'] = (df['first'] == "g").astype(int) 
+df['third'] = (df['third']=="3").astype(int) 
 
 
 for label in cols[:-1]:
@@ -39,3 +39,5 @@ def scale_dataset(dataframe):
     data = np.hstack((x, np.reshape(y, (-1, 1))))
     
     return data, x, y
+
+len(train(train["third"]==1))
