@@ -34,10 +34,11 @@ def scale_dataset(dataframe):
     y = dataframe[dataframe.cols[-1]].values
     
     scaler = StandardScaler()
-    x = scaler.fit_transform(x)
+    X = scaler.fit_transform(x)
 
-    data = np.hstack((x, np.reshape(y, (-1, 1))))
+    data = np.hstack((X, np.reshape(y, (-1, 1))))
     
-    return data, x, y
+    return data, X, y
 
-len(train(train["third"]==1))
+print(len(train[train["third"]==1]))
+print(len(train[train["third"]==0]))
